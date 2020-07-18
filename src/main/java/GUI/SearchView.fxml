@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SearchView">
+   <children>
+      <TextField fx:id="search_queryText" layoutX="110.0" layoutY="93.0" prefHeight="41.0" prefWidth="380.0" promptText="Enter your query here" />
+      <TextField fx:id="search_queryFile" editable="false" layoutX="187.0" layoutY="149.0" prefHeight="41.0" prefWidth="303.0" promptText="Pick a query file" />
+      <Button fx:id="search_browse" layoutX="110.0" layoutY="151.0" mnemonicParsing="false" onAction="#onBrowseCliked" prefHeight="35.0" prefWidth="75.0" text="Browse" />
+      <CheckBox fx:id="search_semantic" layoutX="237.0" layoutY="205.0" mnemonicParsing="false" text="use semantic" />
+      <Button fx:id="search_run" layoutX="108.0" layoutY="244.0" mnemonicParsing="false" onAction="#onRunCliked" prefHeight="31.0" prefWidth="259.0" text="RUN" />
+      <Label alignment="CENTER" layoutX="245.0" layoutY="14.0" prefHeight="35.0" prefWidth="132.0" text="¬GOOGLE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="search_cityComboBox" layoutX="110.0" layoutY="200.0" mnemonicParsing="false" text="City filter" />
+      <Button fx:id="search_clear" layoutX="405.0" layoutY="244.0" mnemonicParsing="false" onAction="#onClearCliked" prefHeight="31.0" prefWidth="90.0" text="Clear" />
+      <TextField fx:id="search_saveText" editable="false" layoutX="187.0" layoutY="294.0" prefHeight="35.0" prefWidth="303.0" promptText="Pick output location for result" />
+      <Button fx:id="search_saveBrowse" layoutX="110.0" layoutY="294.0" mnemonicParsing="false" onAction="#onSaveBrowseCliked" prefHeight="35.0" prefWidth="75.0" text="Browse" />
+      <Button fx:id="search_saveButton" layoutX="113.0" layoutY="341.0" mnemonicParsing="false" onAction="#onSaveButtonCliked" prefHeight="31.0" prefWidth="144.0" text="Save results" />
+      <Button fx:id="search_viewResultButton" layoutX="347.0" layoutY="341.0" mnemonicParsing="false" onAction="#onViewResultsCliked" prefHeight="31.0" prefWidth="144.0" text="View Results" />
+   </children>
+</AnchorPane>
